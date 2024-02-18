@@ -5,7 +5,6 @@ edition = "2021"
 
 [dependencies]
 aya-bpf = { git = "https://github.com/aya-rs/aya" }
-aya-log-ebpf = { git = "https://github.com/aya-rs/aya" }
 execsnoop-common = { path = "../execsnoop-common" }
 
 [[bin]]
@@ -30,3 +29,4 @@ codegen-units = 1
 
 [workspace]
 members = []
+resolver = "2"

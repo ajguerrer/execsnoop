@@ -6,13 +6,13 @@ publish = false
 
 [dependencies]
 aya = { git = "https://github.com/aya-rs/aya", features = ["async_tokio"] }
-aya-log = { git = "https://github.com/aya-rs/aya" }
 execsnoop-common = { path = "../execsnoop-common", features = ["user"] }
 anyhow = "1"
-env_logger = "0.10"
 libc = "0.2"
-log = "0.4"
-tokio = { version = "1.25", features = ["macros", "rt", "rt-multi-thread", "net", "signal"] }
+tokio = { version = "1.25", features = ["macros", "rt", "signal"] }
+clap = { version = "4.5.1", features = ["derive"] }
+time = { version = "0.3.34", features = ["local-offset", "formatting", "macros"] }
+bytes = "1.5.0"
 
 [[bin]]
 name = "execsnoop"
